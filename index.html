@@ -2,133 +2,151 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/main.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="styles/main.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back"
     />
-    <title>K!SHOK</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Kishok</title>
+    <link rel="icon" href="Img/PF/image 4.png" type="image/png" />
   </head>
   <body>
-    <!-- NAVBAR -->
     <header class="header">
-      <div>
-        <a href="index.html">
-          <img src="Img/logo.png" alt="logo" class="logo" />
-        </a>
-      </div>
-
-      <nav class="nav-menu">
+      <a href="index.html">
+        <img src="Img/logo.png" alt="Kishok Logo" class="header_logo" />
+      </a>
+      <div class="header_box">
         <ul>
-          <li><a href="#works" class="nav-link">My work</a></li>
-          <li><a href="#" class="nav-link">Resume</a></li>
+          <li>
+            <a href="#work" class="btn btn_md btn_tertiary">My work</a>
+          </li>
+          <li>
+            <a href="#" class="btn btn_md btn_tertiary">Resume</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          <span class="hero__primary-heading"> Hello, </span>
-          <span class="her0__secondary-heading"> I'm K!SHOK</span>
-        </h1>
-        <p class="hero__description">
-          I wear multiple hats and a few of them are UX Researcher, Designer &
-          Web Developer.
-        </p>
-        <button class="btn btn-primary">
-          <a href="#works"> See my work </a>
-        </button>
-      </div>
+      <div class="hero_content">
+        <div class="hero_left">
+          <div class="hero_left-content">
+            <h1 class="hero_left-title">
+              <span> Hello, </span>
+              <span> I'm K!SHOK </span>
+            </h1>
 
-      <div class="hero__imgs hero__imgs--grid-7">
-        <img src="Img/PF/image 4.png" alt="myself" class="hero__primary-img" />
-        <img
-          src="Img/PF/Frame 11.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--1"
-        />
-        <img
-          src="Img/PF/Frame 12.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--2"
-        />
-        <img
-          src="Img/PF/Frame 13.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--3"
-        />
-        <img
-          src="Img/PF/Frame 14.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--4"
-        />
-        <img
-          src="Img/PF/Frame 15.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--5"
-        />
-        <img
-          src="Img/PF/Frame 16.png"
-          alt="myself"
-          class="hero__secondary-img hero__secondary-img--6"
-        />
+            <p class="hero_left-text">
+              I wear multiple hats and a few of them are UX Researcher, Designer
+              & Web Developer.
+            </p>
+          </div>
+          <a href="#work">
+            <button class="btn btn_lg btn_primary">See my work</button>
+          </a>
+        </div>
+
+        <div class="hero_right hero_grid-7">
+          <img src="Img/PF/image 4.png" alt="myself" class="hero_primary-img" />
+          <img
+            src="Img/PF/Frame 11.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--1"
+          />
+          <img
+            src="Img/PF/Frame 12.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--2"
+          />
+          <img
+            src="Img/PF/Frame 13.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--3"
+          />
+          <img
+            src="Img/PF/Frame 14.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--4"
+          />
+          <img
+            src="Img/PF/Frame 15.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--5"
+          />
+          <img
+            src="Img/PF/Frame 16.png"
+            alt="myself"
+            class="hero_secondary-img hero_secondary-img--6"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="works" id="works">
-      <h2 class="works__header">My works</h2>
+    <section class="work" id="work">
+      <h2 class="work_title">My works</h2>
+      <div class="work_grid">
+        <div class="work_grid-card">
+          <div>
+            <h4 class="work_grid-card--title">Child Care</h4>
+            <p class="work_grid-card--description">
+              A modern solution serving Parents & Providers to solve the
+              problems and enhance the experience.
+            </p>
+          </div>
 
-      <div class="works__grid">
-        <div class="works__card">
-          <!-- <div class="works__card-container"> -->
-          <h3 class="works__card-header">Child Care</h3>
-          <p class="works__card-description">
-            A modern solution serving Parents & Providers to solve the problems
-            and enhance the experience.
-          </p>
-          <!-- <img src="Img/Mask group.png" alt="" class="works__card-img" /> -->
-          <a href="childcare.html" class="btn works__card-btn">View project</a>
-          <!-- </div> -->
+          <a href="childcare.html">
+            <button class="btn btn_lg btn_white">View Case Study</button>
+          </a>
         </div>
 
-        <div class="works__card">
-          <!-- <div class="works__card-container"> -->
-          <h3 class="works__card-header">Logistics</h3>
-          <p class="works__card-description">
-            Rapid solution repositioning the logistic industry to boosting
-            efficiencey and reduccosting cost drastically.
-          </p>
-          <!-- <img src="Img/Trucks.png" alt="" class="works__card-img" /> -->
-          <a href="#" class="btn works__card-btn">View project</a>
-          <!-- </div> -->
+        <div class="work_grid-card">
+          <div>
+            <h4 class="work_grid-card--title">Logistics</h4>
+            <p class="work_grid-card--description">
+              Rapid solution repositioning the logistic industry to boosting
+              efficiencey and reduccosting cost drastically.
+            </p>
+          </div>
+
+          <a href="logistics.html">
+            <button class="btn btn_lg btn_white">View Case Study</button>
+          </a>
         </div>
 
-        <div class="works__card">
-          <div class="works__card-container--empty">
-            <h3 class="works__card--empty-header">Coming Soon</h3>
+        <div class="work_grid-card">
+          <div>
+            <h4 class="work_grid-card--title">Coming Soon.</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p class="footer__text">Your cup of tea?</p>
-      <h2 class="footer__header">Let's chat</h2>
-      <a href="#" class="footer__email">kishokrumak@gmail.com</a>
-      <h6 class="footer__name">KISHOK</h6>
-    </footer>
+    <section class="footer">
+      <p>Whether it's work or just a chat, I'm all ears.</p>
+      <h4>Don't be a stranger</h4>
+      <button class="btn btn_md btn_white">
+        <a href="#">Email me</a>
+      </button>
+
+      <p class="banner">K!shok</p>
+    </section>
   </body>
 </html>
