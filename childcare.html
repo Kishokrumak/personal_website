@@ -3,420 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/main.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back"
     />
-    <title>Child Care</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Childcare</title>
+    <link rel="icon" href="Img/PF/image 4.png" type="image/png" />
   </head>
   <body>
-    <!-- NAV BAR -->
-
     <header class="header">
-      <div>
-        <a href="index.html">
-          <img src="Img/logo.png" alt="logo" class="logo" />
-        </a>
-      </div>
-
-      <nav class="nav-menu">
+      <a href="index.html">
+        <img src="Img/logo.png" alt="Kishok Logo" class="header_logo" />
+      </a>
+      <div class="header_box">
         <ul>
-          <li><a href="index.html#works" class="nav-link">My work</a></li>
-          <li><a href="#" class="nav-link" id="#downloadLink">Resume</a></li>
+          <li>
+            <a href="index.html#work" class="btn btn_md btn_tertiary"
+              >My work</a
+            >
+          </li>
+          <li>
+            <a href="#" class="btn btn_md btn_tertiary">Resume</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
-    <!-- LANDING PAGE -->
+    <div class="case">
+      <a href="index.html">
+        <span class="material-symbols-outlined"> arrow_back </span>
+        Go back</a
+      >
 
-    <!-- <section class="project">
-      <div class="project__content">
-        <img src="Img/CC/Cube.png" alt="Project logo" class="project__img" />
-
-        <div class="project__details">
-          <div class="project__details-summary">
-            <h5 class="project__details--title">Project</h5>
-            <p class="project__details-summary--text">
-              Redefining Attendance tracking & Payments
-            </p>
-          </div>
-
-          <div class="project__details-description">
-            <h6 class="project__details--title">Summary</h6>
-            <p class="project__details-description--text">
-              Child Care System’s digital shift. It highlights key decisions to
-              replace providers’ paper-based systems with a platform for
-              attendance, invoicing, disputes, and state updates. This project
-              is focused on automation—digital records for providers, parent
-              verification, and state payments—cutting time, effort, and
-              boosting transparency.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    SUMMARY
-    <section class="summary">
-      <div class="summary__content">
-        <h4 class="summary__title">STARTING FROM SCRATCH</h4>
-        <p class="summary__description">
-          The project started because the paper-based system frustrated
-          providers with inefficient attendance and invoicing, delayed parents
-          and state agencies with errors, and lost critical updates. It aimed to
-          automate workflows, cut errors, and boost transparency, saving time
-          and trust for all involved.
-        </p>
-      </div>
-      <img src="Img/CC/Rectangle.png" alt="" class="second-img" />
-    </section>
-
-    STATS
-
-    <section class="stats">
-      <div class="stats-content">
-        <img src="Img/CC/Heard.png" alt="" class="stats__img" />
-        <div class="stats__box">
-          <h5 class="stats__box-title">We heard them</h5>
-          <p class="stats__box-description">
-            The project started because the paper-based system frustrated
-            providers with inefficient attendance and invoicing, delayed parents
-            and state agencies with errors, and lost critical updates. It aimed
-            to automate workflows, cut errors, and boost transparency, saving
-            time and trust for all involved.
-          </p>
-        </div>
-      </div>
-
-      <div class="stats__insight">
-        <div class="stats__insight-box">
-          <h6 class="stats__insight-number">42</h6>
-          <p class="stats__insight-name">Interviews</p>
-        </div>
-
-        <div class="stats__insight-box">
-          <h6 class="stats__insight-number">213</h6>
-          <p class="stats__insight-name">Survey Responses</p>
-        </div>
-
-        <div class="stats__insight-box">
-          <h6 class="stats__insight-number">17</h6>
-          <p class="stats__insight-name">Stakeholder Sessions</p>
-        </div>
-
-        <div class="stats__insight-box">
-          <h6 class="stats__insight-number">4</h6>
-          <p class="stats__insight-name">Personas Identified</p>
-        </div>
-      </div>
-    </section>
-
-    Section Personas -->
-
-    <!-- <section class="persona">
-      <h4 class="persona__title">Personas Identified</h4>
-      <div class="persona__list">
-        <div class="persona__box">
-          <img src="Img/CC/Par.png" alt="" class="persona__img" />
-          <p class="persona__name">Parent</p>
-        </div>
-
-        <div class="persona__box">
-          <img src="Img/CC/Pro.png" alt="" class="persona__img" />
-          <p class="persona__name">Provider</p>
-        </div>
-
-        <div class="persona__box">
-          <img src="Img/CC/Admin.png" alt="" class="persona__img" />
-          <p class="persona__name">Admin</p>
-        </div>
-
-        <div class="persona__box">
-          <img src="Img/CC/Child.png" alt="" class="persona__img" />
-          <p class="persona__name">Child</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="parents">
-      <div class="parents__grid">
-        <div class="parents__grid-content">
-          <h4>What do Parents say</h4>
-          <p>
-            Parents face significant challenges in managing child care subsidies
-            due to complex paperwork, strict attendance requirements, and
-            inflexible schedules. Missing a single entry can lead to subsidy
-            suspension, adding to the stress of balancing work and raising
-            children. The lack of flexibility and the administrative burden make
-            it difficult for families to rely on consistent support.
-          </p>
-        </div>
-
-        <div class="parents__statement">
-          <div class="parents__statement-box">
-            <p>“My Husband’s work schedule is much flexible than mine”</p>
-          </div>
-
-          <div class="parents__statement-box">
-            <p>
-              “Every month, it’s a battle to keep up with the attendance form.
-              One missed entry, I am told my subsidy might get suspended”
-            </p>
-          </div>
-
-          <div class="parents__statement-box">
-            <p>
-              “The paperwork in overwhelming. Between work and raising my kids,
-              finding time to fill out all these forms correctly is just too
-              much ”
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- PARENT GRAPH -->
-    <!-- <section class="parent__graph">
-      <div class="parent__graph-header">
-        <h6>Initial Problem Discovery</h6>
-        <h2>The parent who does the most of it</h2>
-      </div>
-
-      <div class="parent__graph-box">
-        <div class="parent__graph-content--1">
-          <p class="parent__graph-question">
-            Percentage of the child’s legal guardian being their mother
-          </p>
-          <p class="parent__graph-value">80%</p>
-        </div>
-
-        <div class="parent__graph-content--2">
-          <p class="parent__graph-question">
-            Average Portion of household income being spent on Child Care
-          </p>
-          <p class="parent__graph-value">24%</p>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- PROVIDERS -->
-
-    <!-- <section class="provider">
-      <div class="provider__grid">
-        <div class="provider__grid-content">
-          <h4>What do Providers say</h4>
-          <p>
-            The complex and time-consuming paperwork requirements for child care
-            subsidies create a significant administrative burden for both
-            providers. This leads to providers spending more time on
-            documentation than on child care, increasing the risk of missed
-            payments and causing some providers to stop accepting subsidies
-            altogether.
-          </p>
-        </div>
-
-        <div class="provider__statement">
-          <div class="provider__statement-box">
-            <p>
-              “It’s a lot of paperwork. Every bit of paperwork takes time away
-              from the children unless you want to be doing it on weekends or at
-              night.”
-            </p>
-          </div>
-
-          <div class="provider__statement-box">
-            <p>
-              “The parent’s don’t understand how careful they have to be with
-              the attendance forms. A missed signature can mean no payment.”
-            </p>
-          </div>
-
-          <div class="provider__statement-box">
-            <p>
-              “We were spending more time on paperworks than with the kids, so
-              we stopped accepting vouchers.“
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- PROVIDER GRAPH -->
-
-    <!-- <section class="provider__graph">
-      <div class="provider__graph-header">
-        <h6>Initial Problem Discovery</h6>
-        <h2>The hassle of being a Provider</h2>
-      </div>
-
-      <div class="provider__graph-content--1">
-        <p class="provider__graph-question">
-          Desire to serve more children if there is less paperwork involved
-        </p>
-        <p class="provider__graph-value">82%</p>
-      </div>
-
-      <div class="provider__graph-content--2">
-        <p class="provider__graph-question">
-          Late payments have impacted the business negatively
-        </p>
-        <p class="provider__graph-value">49%</p>
-      </div>
-    </section>
-
-    <section class="mindmap">
-      <h2 class="mindmap__title">What do they want</h2>
-      <div class="persona-name">
-        <h6>Parents</h6>
-        <h6>Providers</h6>
-      </div>
-
-      <img src="Img/CC/mindmap.png" alt="" class="mindmap__img" />
-    </section>
-
-    Solution
-    <section class="solution">
-      <h2 class="solution__header">Pain point themes</h2>
-
-      <div class="solution-grid">
-        <div class="solution-card">
-          <i class="fa-solid fa-clock solution-icon"></i>
-          <p class="solution-text">Delay & Inefficiencies</p>
-        </div>
-        <div class="solution-card">
-          <i class="fa-solid fa-circle-exclamation solution-icon"></i>
-          <p class="solution-text">Human Errors</p>
-        </div>
-        <div class="solution-card">
-          <i class="fa-solid fa-table-cells-row-lock solution-icon"></i>
-          <p class="solution-text">Storage & retrieval</p>
-        </div>
-        <div class="solution-card">
-          <i class="fa-solid fa-earth solution-icon"></i>
-          <p class="solution-text">Limited accessibility</p>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- MATRIX -->
-
-    <!-- <section class="matrix">
-      <h2 class="matrix__header">Pain Point Matrix</h2>
-
-      <div class="matrix__table">
-        <div class="matrix__title">Pain Point</div>
-        <div class="matrix__title">User</div>
-        <div class="matrix__title">Business</div>
-        <div class="matrix__title">Dev</div>
-        <div class="matrix__data">
-          Late/ Inconsistent payment form agency disrupting the cash flow
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-
-        <div class="matrix__data">
-          Lack of a consistent quality rating system
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-xmark matrix__data-icon--neg"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-xmark matrix__data-icon--neg"></i>
-        </div>
-
-        <div class="matrix__data">
-          Payments tied to Attendance create financial gaps when child misses
-          days, even if the spot is reserved.
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-
-        <div class="matrix__data">
-          Regularly submitting attendance record is tedious & easy to overlook,
-          risking subsidy loss
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-
-        <div class="matrix__data">
-          Challenges in finding child care with special needs
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-xmark matrix__data-icon--neg"></i>
-        </div>
-        <div class="matrix__data">
-          <i class="fa-solid fa-circle-check matrix__data-icon--pos"></i>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="approach">
-      <h2 class="approach__header">A Balanced Appraoch</h2>
-      <div class="approach__grid">
-        <img src="Img/CC/VEN.png" alt="ven diagram" class="approach__img" />
-        <p class="approach__text">
-          The most effective solution will address both sides of the problem
-          equally.
-        </p>
-      </div>
-    </section> -->
-
-    <div class="project">
-      <div>
-        <div class="project__btn">
-          <a href="index.html">
-            <i class="fa-solid fa-arrow-left project__icon"></i>
-            Go back
-          </a>
-        </div>
-      </div>
-
-      <img src="Img/CC/MacBook Pro 16_ - 1.png" alt="" class="project__img" />
+      <img src="Img/CC/Frame 626056.png" alt="Case Study" class="case_report" />
     </div>
-
-    <script>
-      function triggerDownload() {
-        document.getElementById("downloadLink").click();
-      }
-    </script>
   </body>
 </html>

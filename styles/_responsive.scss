@@ -1,0 +1,151 @@
+@media (max-width: 799px) {
+  .hero {
+    height: auto;
+  }
+
+  .hero_content {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .hero_left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .work {
+    height: auto;
+
+    &_grid {
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+
+      &-card {
+        width: 100%;
+        height: 40rem;
+
+        h4 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .empty {
+      h4 {
+        font-size: 12rem;
+      }
+    }
+  }
+
+  .footer {
+    .banner {
+      font-size: 12rem;
+
+      bottom: -20%;
+      left: 50%;
+    }
+  }
+
+  .case {
+    padding: 12rem 4rem;
+  }
+
+  .header {
+    padding: 2rem 4rem;
+  }
+}
+
+// Break point
+@media (max-width: 1250px) {
+  .work {
+    height: auto;
+
+    &_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3.2rem;
+
+      &-card {
+        width: 100%;
+        height: 40rem;
+
+        h4 {
+          font-size: 3.2rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+
+        &:nth-child(3) {
+          h4 {
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .banner {
+      font-size: 16rem;
+
+      bottom: -20%;
+      left: 50%;
+    }
+  }
+
+  .case {
+    padding: 12rem 6rem;
+  }
+
+  .header {
+    padding: 2rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 899px) and (max-width: 1136px) {
+  .work_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+
+    &-card {
+      &:nth-child(3) {
+        grid-area: 2 / 1 / 3 / 3;
+        h4 {
+          font-size: 12rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .work_grid {
+    grid-template-columns: 1fr;
+
+    &-card {
+      height: 36rem;
+      h4 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 2;
+      }
+
+      &:nth-child(3) {
+        h4 {
+          font-size: 9rem;
+        }
+      }
+    }
+  }
+}
