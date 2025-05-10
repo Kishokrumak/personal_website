@@ -8,147 +8,352 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Kishok</title>
     <link rel="icon" href="Img/PF/image 4.png" type="image/png" />
   </head>
-  <body>
+
+  <body class="body">
     <header class="header">
-      <a href="index.html">
-        <img src="Img/logo.png" alt="Kishok Logo" class="header_logo" />
+      <a href="index.html" class="header__link">
+        <img src="Img/logo.png" alt="Kishok Logo" class="header__logo" />
       </a>
-      <div class="header_box">
-        <ul>
-          <li>
-            <a href="#work" class="btn btn_md btn_tertiary">My work</a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#work" class="btn btn--md btn--tertiary">My work</a>
           </li>
-          <li>
-            <a href="Kishok_UX_Resume.docx" class="btn btn_md btn_tertiary"
+          <li class="header__item">
+            <a href="Kishok_UX_Resume.docx" class="btn btn--md btn--tertiary"
               >Resume</a
             >
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <section class="hero">
-      <div class="hero_content">
-        <div class="hero_left">
-          <div class="hero_left-content">
-            <h1 class="hero_left-title">
-              <span> Hello, </span>
-              <span> I'm K!SHOK </span>
+      <div class="hero__content">
+        <div class="hero__left">
+          <div class="hero__left-content">
+            <h1 class="hero__left-title">
+              I Research, I Sketch, I Ship - In that order.
             </h1>
 
-            <p class="hero_left-text">
-              I wear multiple hats and a few of them are UX Researcher, Designer
-              & Web Developer.
+            <p class="hero__left-text">
+              I research like a detective, design like a daydreamer, and code
+              like my coffee depends on it. From sticky notes to sticky pixels,
+              I turn user pain points into "Why didn't they make this sooner?"
+              moments. The goals? Digital experiences so smooth, even your
+              grandma would say, "Now that's intuitive."
             </p>
           </div>
-          <a href="#work">
-            <button class="btn btn_lg btn_primary">See my work</button>
+
+          <a href="#work" class="hero__left-link">
+            <button class="btn btn--lg btn--primary">See my work</button>
           </a>
         </div>
 
-        <div class="hero_right hero_grid-7">
-          <img src="Img/PF/image 4.png" alt="myself" class="hero_primary-img" />
+        <div class="hero__right hero__grid-7">
+          <img
+            src="Img/PF/image 4.png"
+            alt="myself"
+            class="hero__primary-img"
+          />
           <img
             src="Img/PF/Frame 11.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--1"
+            class="hero__secondary-img hero__secondary-img--1"
           />
           <img
             src="Img/PF/Frame 12.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--2"
+            class="hero__secondary-img hero__secondary-img--2"
           />
           <img
             src="Img/PF/Frame 13.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--3"
+            class="hero__secondary-img hero__secondary-img--3"
           />
           <img
             src="Img/PF/Frame 14.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--4"
+            class="hero__secondary-img hero__secondary-img--4"
           />
           <img
             src="Img/PF/Frame 15.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--5"
+            class="hero__secondary-img hero__secondary-img--5"
           />
           <img
             src="Img/PF/Frame 16.png"
             alt="myself"
-            class="hero_secondary-img hero_secondary-img--6"
+            class="hero__secondary-img hero__secondary-img--6"
           />
+        </div>
+
+        <a href="#details">
+          <button class="btn btn--md btn--ghost">
+            Scroll down
+            <span class="material-symbols-outlined"> arrow_downward </span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section class="details" id="details">
+      <div class="details__employment">
+        <h3 class="details__title">Employment Experience</h3>
+        <div class="details__experience">
+          <div class="details__job">
+            <p class="details__job-year">Oct 2021 - Present</p>
+            <div class="details__job-info">
+              <p>Sr. UX Designer</p>
+              <p>MTX</p>
+            </div>
+          </div>
+
+          <div class="details__job">
+            <p class="details__job-year details__job-year-last">
+              Jan 2018 - Oct 2021
+            </p>
+            <div class="details__job-info">
+              <p>UX Designer</p>
+              <p>ATC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="details__cert">
+        <h3 class="details__title">Certifications</h3>
+        <div class="details__list">
+          <div class="details__certificate">
+            <img
+              src="Img/course/Google.png"
+              alt=""
+              class="details__certificate-img"
+            />
+            <p class="details__certificate-title">
+              Google UX Design <br />
+              Google
+            </p>
+          </div>
+
+          <div class="details__certificate">
+            <img
+              src="Img/course/IDF.png"
+              alt=""
+              class="details__certificate-img"
+            />
+            <p class="details__certificate-title">
+              Mobile UX Design: The Beginner's Guide <br />IDF
+            </p>
+          </div>
+
+          <div class="details__certificate">
+            <img
+              src="Img/course/IDF.png"
+              alt=""
+              class="details__certificate-img"
+            />
+            <p class="details__certificate-title">
+              User Experience: The Beginner’s Guide <br />IDF
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="details__article">
+        <h3 class="details__title">Article Published</h3>
+        <div class="details__article-card">
+          <img
+            src="Img/Dwight.jpg"
+            alt="Image of Dwight"
+            class="details__article-img"
+          />
+
+          <div class="details__article-bottom">
+            <div class="details__article-content">
+              <h5 class="details__article-title">
+                Dwight’s Altoids & Addictive UX
+              </h5>
+              <p class="article__card-description">
+                Discover the behavioral design principles – conditioning,
+                nudging, gamification – behind Jim's famous Altoid prank on
+                Dwight.
+              </p>
+            </div>
+            <a
+              class="btn btn--md btn--secondary"
+              href="https://medium.com/@kishokrumak/dwights-altoids-and-addictive-ux-91228b31d59e"
+            >
+              Read Article</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="details__tools">
+        <h3 class="details__title">Tools</h3>
+
+        <div class="details__tools-list">
+          <div class="details__tools-grp">
+            <div class="details__tools-box">
+              <img src="Img/Tools/Figma.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/Balasmiq.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/Lucid Chart.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/Miro.png" alt="" />
+            </div>
+          </div>
+
+          <div class="details__tools-grp">
+            <div class="details__tools-box">
+              <img src="Img/Tools/RelumeAI.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/ChatGPT.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/V0.png" alt="" />
+            </div>
+          </div>
+
+          <div class="details__tools-grp">
+            <div class="details__tools-box">
+              <img src="Img/Tools/HTML.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/CSS.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/SASS.png" alt="" />
+            </div>
+
+            <div class="details__tools-box">
+              <img src="Img/Tools/JS.png" alt="" />
+            </div>
+            <div class="details__tools-box">
+              <img src="Img/Tools/Salesforce.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- <section class="article" id="article">
+      <div class="article__header">
+        <h2 class="article__title">The Write Stuff</h2>
+      </div>
+
+      <p class="article__description">
+        So far, just one article, but hey - Rome wasn't built in a day, right?
+      </p>
+
+      <div class="article__card">
+        <img
+          src="Img/Dwight.avif"
+          alt="Image of Dwight"
+          class="article__card-img"
+        />
+
+        <div class="article__card-bottom">
+          <div class="article__card-content">
+            <h5 class="article__card-title">Dwight’s Altoids & Addictive UX</h5>
+            <p class="article__card-description">
+              In this aticle, I explore how Jim's legendary Altoid prank on
+              Dwight hilariously mirros real principles of behavioral design -
+              from conditioning andd nudging to gamification. Curious? Dive in
+              for the full story.
+            </p>
+          </div>
+          <a
+            class="btn btn--md btn--secondary"
+            href="https://medium.com/@kishokrumak/dwights-altoids-and-addictive-ux-91228b31d59e"
+          >
+            Read Article</a
+          >
+        </div>
+      </div>
+
+      <div class="article__empty article__card">
+        <p class="article__empty-title">Stay tuned!</p>
+      </div>
+
+      <div class="article__empty article__card">
+        <p class="article__empty-title">Stay tuned!</p>
+      </div>
+    </section> -->
+
     <section class="work" id="work">
-      <h2 class="work_title">My works</h2>
-      <div class="work_grid">
-        <div class="work_grid-card">
-          <div>
-            <h4 class="work_grid-card--title">Child Care</h4>
-            <p class="work_grid-card--description">
+      <h2 class="work__title">My works</h2>
+      <div class="work__grid">
+        <div class="work__card">
+          <div class="work__card-content">
+            <h4 class="work__card-title">Child Care</h4>
+            <p class="work__card-description">
               A modern solution serving Parents & Providers to solve the
               problems and enhance the experience.
             </p>
           </div>
 
-          <a href="childcare.html">
-            <button class="btn btn_lg btn_white">View Case Study</button>
+          <a href="childcare.html" class="work__card-link">
+            <button class="btn btn--lg btn--white">View Case Study</button>
           </a>
         </div>
 
-        <div class="work_grid-card">
-          <div>
-            <h4 class="work_grid-card--title">Logistics</h4>
-            <p class="work_grid-card--description">
+        <div class="work__card">
+          <div class="work__card-content">
+            <h4 class="work__card-title">Logistics</h4>
+            <p class="work__card-description">
               Rapid solution repositioning the logistic industry to boosting
               efficiencey and reduccosting cost drastically.
             </p>
           </div>
 
-          <a href="logistics.html">
-            <button class="btn btn_lg btn_white">View Case Study</button>
+          <a href="logistics.html" class="work__card-link">
+            <button class="btn btn--lg btn--white">View Case Study</button>
           </a>
         </div>
 
-        <div class="work_grid-card">
-          <div>
-            <h4 class="work_grid-card--title">Coming Soon.</h4>
+        <div class="work__card work__card--coming-soon">
+          <div class="work__card-content">
+            <h4 class="work__card-title">Coming Soon.</h4>
           </div>
         </div>
       </div>
     </section>
 
     <section class="footer">
-      <p>Whether it's work or just a chat, I'm all ears.</p>
-      <h4>Don't be a stranger</h4>
-      <button class="btn btn_md btn_white">
-        <a href="#">Email me</a>
+      <p class="footer__text">
+        Whether it's work or just a chat, I'm all ears.
+      </p>
+      <h4 class="footer__headline">Don't be a stranger</h4>
+      <button class="btn btn--md btn--white footer__button">
+        <a href="mailto:#" class="footer__link">Email me</a>
       </button>
 
-      <p class="banner">K!shok</p>
+      <p class="footer__banner">K!shok</p>
     </section>
   </body>
 </html>
