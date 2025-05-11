@@ -19,8 +19,14 @@
   &--lg {
     font-size: 1.8rem;
     line-height: 1.6;
-    padding: 1.6rem 3.2rem;
+    padding: 1.4rem 3.2rem;
     border-radius: 1rem;
+  }
+
+  &--sm {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
   }
 
   &--white {
