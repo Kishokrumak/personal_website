@@ -1,6 +1,6 @@
 @media (max-width: 1900px) {
   .header {
-    padding: 2rem 8rem;
+    padding: 2rem 14rem;
   }
 
   h1 {
@@ -16,6 +16,14 @@
   }
 
   .hero {
+    padding: 14rem;
+
+    &__content {
+      column-gap: 12rem;
+      row-gap: 16rem;
+      margin-top: 4rem;
+    }
+
     &__left {
       gap: 4rem;
 
@@ -40,7 +48,8 @@
   }
 
   .work {
-    height: max-content;
+    padding: 12rem 4rem;
+    height: 100vh;
   }
 
   .footer {
@@ -49,5 +58,12 @@
 
   .footer__banner {
     transform: translate(-50%, -45%);
+  }
+
+  .article {
+    padding: 12rem;
+    &__grid {
+      gap: 4rem;
+    }
   }
 }
