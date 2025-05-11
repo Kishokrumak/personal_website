@@ -1,44 +1,92 @@
 .btn {
   background-color: transparent;
   border: none;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding: 1rem 2.4rem;
-  border-radius: 3.2rem;
-  font-size: 1.6rem;
-  font-family: "Sansation";
-  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
-    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
-    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
-    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
-    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
-    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
   width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
 
-  &__ghost {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-  }
-
-  &__white {
-    background-color: #fff;
-    color: #333;
-  }
-
-  &__primary {
-    background-color: #111;
-    color: #fff;
-  }
-
-  &__lg {
-    padding: 1.6rem 3.2rem;
+  &--md {
     font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.6rem;
   }
-}
 
-.grid-2-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10vw;
+  &--lg {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1rem;
+  }
+
+  &--white {
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f9f2ff;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      background-color: #fff;
+    }
+  }
+
+  &--primary {
+    background-color: #9f34f6;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #9933cc;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    border: 1px solid #9f34f6;
+    color: #9f34f6;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #9933cc;
+      color: #fff;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--ghost {
+    background-color: rgba(17, 17, 17, 0.4);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #111;
+    }
+  }
+
+  &--tertiary {
+    background-color: white;
+    color: #737373;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(159, 52, 246, 0.207);
+    }
+
+    &:active {
+      color: #fff;
+      background-color: rgba(159, 52, 246);
+    }
+  }
 }
