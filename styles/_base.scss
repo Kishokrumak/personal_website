@@ -1,219 +1,71 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-*,
+*::after,
 *::before,
-*::after {
+* {
   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Sansation", "Lato", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
+  font-weight: 400;
 }
 
 p {
-  font-family: "Lato";
-}
-
-.scroll {
-  width: fit-content;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #333;
 }
 
 h1 {
-  font-size: 9rem;
-  font-weight: 600;
+  font-size: 6rem;
   line-height: 1.2;
-  color: #333;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 7rem;
-  font-weight: 600;
+  font-size: 4rem;
   line-height: 1.2;
-  color: #333;
 }
 
 h3 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.2rem;
   line-height: 1.2;
-  color: #333;
 }
 
 h4 {
-  font-size: 3.2rem;
-  font-weight: 600;
+  font-size: 2.4rem;
   line-height: 1.2;
-  color: #333;
 }
 
 h5 {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 2rem;
   line-height: 1.2;
-  color: #333;
 }
 
 h6 {
   font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #333;
+  line-height: 1.2;
 }
 
-// Animation
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  50% {
-    transform: translateX(1rem);
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
+a {
+  text-decoration: none;
+  width: fit-content;
 }
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-
-  50% {
-    transform: translateY(-2rem);
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
-@keyframes dropIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10rem);
-  }
-
-  20% {
-    transform: translateY(-6rem);
-    opacity: 1;
-  }
-
-  80% {
-    transform: translateY(1rem);
-  }
-
-  100% {
-    transform: translateY(0rem);
-  }
-}
-
-@keyframes shineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
-// @keyframes popUp {
-//   0% {
-//     transform: translateY(+10rem);
-//   }
-
-//   100% {
-//     transform: translateY(0rem);
-//   }
-// }
 
 // Utility Class
 
-.mrg__btm-md {
-  margin-bottom: 6rem;
-}
+$section-padding: 14rem 8rem;
 
-//
-
-.container {
-  border: 1px solid #ccc;
-  padding: 15px;
-  width: 400px;
-}
-
-.tabs {
-  display: flex;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
-}
-
-.tab {
-  padding: 10px 15px;
-  cursor: pointer;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 2px solid transparent;
-}
-
-.tab.active {
-  border-bottom: 2px solid blue;
-  font-weight: bold;
-}
-
-.list-container {
-  margin-top: 10px;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.list-item {
-  padding: 5px 0;
-  border-bottom: 1px dotted #eee;
-}
-
-.list-item:last-child {
-  border-bottom: none;
-}
-
-.tab-content {
-  display: none; /* Initially hide all content */
-}
-
-.tab-content.active {
-  display: block; /* Show active content */
-}
+$h2-margin-bottom: 1rem;
